@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Fast New Tab Redirect",
+  "name": "Simple New Tab Redirect",
   "description": "Redirects the new tab page to your favorite one",
   "version": "2.0",
   "chrome_url_overrides": {
