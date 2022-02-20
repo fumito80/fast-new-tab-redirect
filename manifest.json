@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Fast New Tab Redirect",
+  "description": "Redirect the New Tab page to your favorite",
+  "version": "2.0",
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "storage"
+  ]
+}
