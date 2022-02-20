@@ -1,9 +1,11 @@
 const { id } = chrome.runtime;
 
-chrome.storage.local.get(id, ({ [id]: url }) => {
+function openNewTab({ [id]: url }) {
   if (url == null) {
     chrome.runtime.openOptionsPage();
     return;
   }
-  chrome.tabs.update({ url });
-});
+  chrome.tabs.update({ url });  
+}
+
+chrome.storage.local.get(id, openNewTab);
