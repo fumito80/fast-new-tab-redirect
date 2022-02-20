@@ -1,0 +1,1 @@
+# fast-new-tab-redirect
