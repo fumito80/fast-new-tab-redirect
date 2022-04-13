@@ -1,10 +1,7 @@
-const { id } = chrome.runtime;
-const { url } = document.form;
-
-chrome.storage.local.get(id, ({ [id]: redirectUrl }) => {
-	url.value = redirectUrl ?? '';
+chrome.storage.local.get('url', ({ url }) => {
+	document.form.url.value = url ?? '';
 });
 
 document.form.addEventListener('submit', () => {
-  chrome.storage.local.set({ [id]: url.value });
+  chrome.storage.local.set({ url: document.form.url.value });
 });
